@@ -1,3 +1,8 @@
+## Reproducibility
+
+To reproduce this project environment, install the required Python packages:
+
+```bash
 # Requirements for ASD Gene Expression Analysis Project
 # Python packages for reproducibility
 # Install with: pip install -r requirements.txt
