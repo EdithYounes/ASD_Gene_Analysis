@@ -37,30 +37,18 @@ By identifying candidate genes associated with autism, I aim to develop **comput
 
 ## Project Structure
 
-
 ASD_Gene_Analysis/
-├── README.md # Project overview and instructions
-
-├── ASD_analysis.ipynb # Full analysis notebook
-
-├── figures/ # Folder containing all figures
-
-│ ├── summary_figure_all_panels.png
-
-│ ├── pca_autism_samples.png
-
-│ ├── confusion_matrix.png
-
-│ ├── feature_importance_genes.png
-
-│ ├── top20_genes_heatmap.png
-
-│ └── volcano_plot_autism.png
-
-├── requirements.txt # Minimal environment packages
-
-└── LICENSE # MIT License
-
+- **README.md** – Project overview and instructions
+- **ASD_analysis.ipynb** – Full analysis notebook
+- **figures/** – Folder containing all figures
+  - `summary_figure_all_panels.png`
+  - `pca_autism_samples.png`
+  - `confusion_matrix.png`
+  - `feature_importance_genes.png`
+  - `top20_genes_heatmap.png`
+  - `volcano_plot_autism.png`
+- **requirements.txt** – Minimal environment packages
+- **LICENSE** – MIT License
 ---
 
 ## Methods & Analysis
