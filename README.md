@@ -102,24 +102,3 @@ This project is licensed under the **MIT License**. See `LICENSE` for details.
 | ![PCA](figures/pca_autism_samples.png) | ![Heatmap](figures/top20_genes_heatmap.png) | ![Volcano](figures/volcano_plot_autism.png) | ![Importance](figures/feature_importance_genes.png) | ![Confusion](figures/confusion_matrix.png) | 
 
 > **Summary figure** combining all panels is displayed at the top. (except confusion matrix)
-
----
-
-## Installation & Requirements
-
-Follow these steps to set up the project environment:
-
-```bash
-### Clone the repository
-git clone https://github.com/EdithYounes/ASD_Gene_Analysis.git
-cd ASD_Gene_Analysis
-
-# 2️⃣ (Optional) Create and activate a virtual environment
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# Mac/Linux
-source venv/bin/activate
-
-# 3️⃣ Install dependencies
-pip install -r requirements.txt
