@@ -66,12 +66,12 @@ By identifying candidate genes associated with autism, I aim to develop **comput
 Clone the repository:
 
 ```bash
-git clone https://github.com/<EdithYounes>/<ASD_Gene_Analysis>.git
-cd <ASD_Gene_Analysis>
+git clone https://github.com/EdithYounes/ASD_Gene_Analysis.git
+cd ASD_Gene_Analysis
 
 ---
 
-## 📊 Methods & Analysis
+ ## Methods & Analysis
 
 - **Data Loading:** GEOparse to download and process GSE18123  
 - **Label Assignment:** Classified samples as Autism (1) or Control (0)  
@@ -86,7 +86,7 @@ cd <ASD_Gene_Analysis>
 
 ---
 
-## 📈 Key Results
+## Key Results
 
 - PCA shows **clear separation** between ASD and control samples  
 - Random Forest achieved **strong classification performance** (accuracy details in notebook)  
@@ -95,7 +95,7 @@ cd <ASD_Gene_Analysis>
 
 ---
 
-## ⭐ Future Work
+## Future Work
 
 - Extend analysis to **RNA-seq datasets** for higher resolution  
 - Integrate **pathway and network analysis** for biological interpretation  
@@ -103,7 +103,7 @@ cd <ASD_Gene_Analysis>
 
 ---
 
-## 🔁 Reproducibility
+## Reproducibility
 
 - All code, data processing steps, and figures are **fully reproducible** using `notebook.ipynb` and `requirements.txt`  
 - Designed to demonstrate computational biology, programming, and ML skills relevant for **biomedical engineering research**
