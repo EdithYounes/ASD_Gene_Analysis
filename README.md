@@ -152,7 +152,7 @@ These genes represent promising candidates for further biological investigation.
 These genes represent potential candidates for further biological investigation in ASD research.
 
 
-**The feature importance** analysis from the Random Forest model identifies genes that contribute most strongly to distinguishing ASD samples from controls.
+**The feature importance analysis** from the Random Forest model identifies genes that contribute most strongly to distinguishing ASD samples from controls.
 Genes with higher importance scores have a greater influence on the model’s predictions, suggesting that their expression levels contain meaningful information related to ASD classification.
 These genes may represent **potential biomarkers or molecular contributors to autism-related biological pathways**. However, machine learning importance scores should be interpreted cautiously and ideally validated through additional biological experiments or independent datasets.
 
