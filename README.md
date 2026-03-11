@@ -1,68 +1,49 @@
-# ASD Gene Expression Analysis Using Machine Learning
+# Autism Gene Expression Analysis using Machine Learning
 
-[![Python](https://img.shields.io/badge/python-3.10-blue)](https://www.python.org/)
+![Python](https://img.shields.io/badge/python-3.11-blue)
+![Jupyter](https://img.shields.io/badge/jupyter-notebook-orange)
+![License](https://img.shields.io/badge/license-MIT-green)
 
----
-
-## **Overview**
-
-This project analyzes gene expression data from the GEO dataset **GSE18123** to identify autism spectrum disorder (ASD) associated genes. By combining **machine learning (Random Forest)** with **statistical analysis**, the project highlights candidate genes and visualizes differences between ASD and control samples.  
-
-**Key biomedical engineering relevance:**  
-- Predictive modeling for disease classification  
-- Gene prioritization for potential biomarkers  
-- Translational application of computational biology to neurodevelopmental disorders  
-
----
-
-## **Features**
-
-- Download and preprocess GEO gene expression data  
-- Handle missing data and select the most variable genes  
-- Principal Component Analysis (PCA) for sample visualization  
-- Random Forest classifier for ASD vs control prediction  
-- Feature importance analysis to prioritize genes  
-- Heatmap and volcano plots for top genes  
-- Identification of candidate genes by combining ML and statistical significance  
-
----
-
-## **Results**
-
-### PCA of ASD vs Control Samples
-![PCA](figures/pca_autism_samples.png)
-
-### Top 20 Important Genes (Random Forest)
-![Feature Importance](figures/feature_importance_genes.png)
-
-### Heatmap of Top 20 Genes
-![Heatmap](figures/top20_genes_heatmap.png)
-
-### Volcano Plot ASD vs Control
-![Volcano Plot](figures/volcano_plot_autism.png)
-
-### Combined Summary Figure
 ![Summary Figure](figures/summary_figure_all_panels.png)
 
----
-
-## **Candidate Genes Identified**
-
-| Gene | ML Importance |
-|------|---------------|
-| GENE1 | 0.025         |
-| GENE2 | 0.021         |
-| GENE3 | 0.018         |
-| GENE4 | 0.016         |
-| GENE5 | 0.015         |
-
-*These genes were prioritized by combining Random Forest feature importance with statistical significance (p < 0.05, |log2FC| > 1).*
+This repository contains a computational project analyzing autism spectrum disorder (ASD) gene expression profiles using machine learning and statistical methods. It demonstrates my ability to combine **biology, data science, and computational modeling** — skills highly relevant for a Master's in Biomedical Engineering.  
 
 ---
 
-## **Getting Started**
+## Motivation
 
-### **Clone the repository**
-```bash
-git clone https://github.com/EdithYounes/ASD_Gene_Analysis.git
-cd ASD_Gene_Analysis
+I am a Biology graduate with a strong interest in **computational biology and biomedical engineering**. This project reflects my passion for combining **molecular biology, data science, and machine learning** to uncover patterns in complex biological datasets. By analyzing autism gene expression and identifying candidate genes using advanced ML techniques, I aim to develop skills that will contribute to translational biomedical research and future innovations in healthcare.  
+
+---
+
+## 🔬 Project Overview
+
+- **Objective:** Identify ASD-associated genes and explore differential gene expression patterns between autism and control samples.  
+- **Dataset:** Microarray gene expression dataset from [GEO: GSE18123](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18123).  
+- **Approach:**  
+  - Data preprocessing and cleaning  
+  - Selection of highly variable genes  
+  - Standardization and dimensionality reduction (PCA)  
+  - Classification using Random Forest  
+  - Feature importance analysis  
+  - Statistical significance analysis (t-test, volcano plot)  
+  - Visualization of results with heatmaps, PCA plots, and summary figures  
+
+---
+
+## ⚙️ Project Structure
+
+```txt
+.
+├── README.md
+├── notebook.ipynb                # Full analysis notebook
+├── figures/                      # Folder containing all figures
+│   ├── summary_figure_all_panels.png
+│   ├── pca_autism_samples.png
+│   ├── confusion_matrix.png
+│   ├── feature_importance_genes.png
+│   ├── top20_genes_heatmap.png
+│   ├── volcano_plot_autism.png
+│   └── pca_animation.gif         # Optional PCA GIF
+├── requirements.txt              # Minimal environment packages
+└── LICENSE                       # MIT License
