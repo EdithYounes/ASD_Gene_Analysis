@@ -37,7 +37,6 @@ By identifying candidate genes associated with autism, I aim to develop **comput
 
 ## Project Structure
 
-**
 
 ASD_Gene_Analysis/
 ├── README.md # Project overview and instructions
@@ -51,8 +50,6 @@ ASD_Gene_Analysis/
 │ └── volcano_plot_autism.png
 ├── requirements.txt # Minimal environment packages
 └── LICENSE # MIT License
-
-** 
 
 ---
 
