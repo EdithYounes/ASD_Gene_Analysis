@@ -7,6 +7,14 @@
 ![Summary Figure](figures/summary_figure_all_panels.png)
 *Summary figure combining PCA, top gene heatmap, volcano plot, and feature importance.*
 
+
+## Background
+
+Autism Spectrum Disorder (ASD) is a complex neurodevelopmental condition characterized by social communication differences and restricted or repetitive behaviors. Increasing evidence suggests that **gene expression dysregulation plays an important role in ASD pathology**.
+
+High-throughput gene expression technologies such as **microarrays and RNA sequencing** allow researchers to measure the expression levels of thousands of genes simultaneously.
+
+
 ## Quick Highlights
 
 - Analyzed **microarray gene expression data** from the GEO dataset **GSE18123** to study autism spectrum disorder (ASD).
@@ -84,6 +92,21 @@ ASD_Gene_Analysis
 
 ---
 
+## Biological Interpretation of Top Candidate Genes
+
+The Random Forest model identified several genes with high importance for distinguishing ASD from control samples. These genes represent potential biomarkers or contributors to ASD-associated molecular pathways.
+
+Gene expression differences may reflect alterations in biological processes such as:
+
+- neuronal development
+- synaptic signaling
+- immune and inflammatory responses
+- neurodevelopmental regulation
+
+While further experimental validation would be required, these results demonstrate how **machine learning can help prioritize genes for further biological investigation**.
+
+---
+
 ## Future Work
 
 - Extend analysis to **RNA-seq datasets** for higher resolution  
@@ -113,6 +136,31 @@ This project is licensed under the **MIT License**. See `LICENSE` for details.
 
 > **Summary figure** combining all panels is displayed at the top. (except confusion matrix)
 
+### Interpretation
+
+The PCA visualization shows partial separation between ASD and control samples along the principal components.  
+This suggests that **gene expression patterns differ between the two groups**, indicating that gene expression may contain predictive information for ASD classification.
+
+The heatmap displays the expression patterns of the **top 20 genes identified by the Random Forest model** across all samples.
+Genes were standardized using Z-scores to highlight relative expression differences between samples. Distinct expression patterns can be observed between ASD and control groups, indicating that these genes may contribute to the molecular differences associated with autism.
+Clustering patterns suggest that some samples with similar gene expression profiles group together, further supporting the presence of **distinct transcriptional signatures in ASD**.
+These genes represent promising candidates for further biological investigation.
+
+The volcano plot highlights genes with both **large fold change and strong statistical significance**.  
+These genes represent potential candidates for further biological investigation in ASD research.
+
+The feature importance analysis from the Random Forest model identifies genes that contribute most strongly to distinguishing ASD samples from controls.
+Genes with higher importance scores have a greater influence on the model’s predictions, suggesting that their expression levels contain meaningful information related to ASD classification.
+These genes may represent **potential biomarkers or molecular contributors to autism-related biological pathways**. However, machine learning importance scores should be interpreted cautiously and ideally validated through additional biological experiments or independent datasets.
+
+The confusion matrix summarizes the classification performance of the Random Forest model on the test dataset.
+Correct predictions are represented along the diagonal, while off-diagonal values correspond to misclassifications.
+The model correctly classifies the majority of samples, indicating that gene expression patterns provide useful information for distinguishing ASD from control individuals.
+Although some misclassifications occur, the overall performance demonstrates that **machine learning models can capture meaningful biological signals within high-dimensional gene expression data**.
+
+The Random Forest classifier achieved strong performance in distinguishing ASD from control samples.  
+This suggests that **patterns within gene expression data can be leveraged by machine learning models to detect disease-associated signatures.**
+
 ---
 
 ## References
@@ -137,6 +185,8 @@ This project is licensed under the **MIT License**. See `LICENSE` for details.
 5. Waskom, M. (2021).  
    Seaborn: Statistical data visualization.  
    https://seaborn.pydata.org
+
+   ---
 
 ## Contact
 
