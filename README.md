@@ -25,7 +25,7 @@ High-throughput gene expression technologies such as **microarrays and RNA seque
 
 **Author:** Edith Younes  
 
-> **Project Pitch:** This project demonstrates my ability to integrate **biology, data science, and machine learning** by analyzing autism gene expression data and identifying candidate genes. It showcases skills directly relevant to computational and biomedical research, making it highly applicable for a Master’s in Biomedical Engineering.
+> **Project Pitch:** This project demonstrates my ability to integrate **biology, data science, and machine learning** by analyzing autism gene expression data and identifying candidate genes. It showcases skills directly relevant to computational and biomedical research.
 
 ---
 
