@@ -192,6 +192,17 @@ This suggests that **patterns within gene expression data can be leveraged by ma
    https://seaborn.pydata.org
 
    ---
+   
+## How to Cite This Project
+
+If you use or reference this project, please cite it as:
+
+Younes, E. (2026).  
+*Autism Gene Expression Analysis Using Machine Learning.*  
+GitHub Repository.  
+https://github.com/yourusername/ASD_Gene_Analysis
+
+---
 
 ## Contact
 
