@@ -6,6 +6,8 @@
 
 ![Summary Figure](figures/summary_figure_all_panels.png)
 
+**Author:** [Edith Younes]  
+
 > **Project Pitch:** This project demonstrates my ability to integrate **biology, data science, and machine learning** by analyzing autism gene expression data and identifying candidate genes. It showcases skills directly relevant to computational and biomedical research, making it highly applicable for a Master’s in Biomedical Engineering.
 
 ---
@@ -102,3 +104,9 @@ This project is licensed under the **MIT License**. See `LICENSE` for details.
 | ![PCA](figures/pca_autism_samples.png) | ![Heatmap](figures/top20_genes_heatmap.png) | ![Volcano](figures/volcano_plot_autism.png) | ![Importance](figures/feature_importance_genes.png) | ![Confusion](figures/confusion_matrix.png) | 
 
 > **Summary figure** combining all panels is displayed at the top. (except confusion matrix)
+
+---
+
+## Contact
+
+**[Edith Younes]** — [younesedith@gmail.com]
