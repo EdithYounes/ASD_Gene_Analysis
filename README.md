@@ -7,6 +7,13 @@
 ![Summary Figure](figures/summary_figure_all_panels.png)
 *Summary figure combining PCA, top gene heatmap, volcano plot, and feature importance.*
 
+## Quick Highlights
+
+- Analyzed **microarray gene expression data** from the GEO dataset **GSE18123** to study autism spectrum disorder (ASD).
+- Applied **machine learning (Random Forest)** to classify ASD vs control samples based on gene expression.
+- Identified **candidate genes** using a combination of **feature importance and statistical testing (t-tests)**.
+- Visualized results using **PCA, heatmaps, volcano plots, and feature importance analysis**.
+- Demonstrates integration of **molecular biology, statistical analysis, and machine learning** for biomedical research.
 
 **Author:** Edith Younes  
 
@@ -107,6 +114,29 @@ This project is licensed under the **MIT License**. See `LICENSE` for details.
 > **Summary figure** combining all panels is displayed at the top. (except confusion matrix)
 
 ---
+
+## References
+
+1. Gene Expression Omnibus (GEO) Dataset:  
+   GSE18123 – Autism gene expression dataset.  
+   https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18123
+
+2. Barrett, T., et al. (2013).  
+   NCBI GEO: archive for functional genomics data sets—update.  
+   *Nucleic Acids Research*, 41(D1), D991–D995.  
+   https://doi.org/10.1093/nar/gks1193
+
+3. Pedregosa, F., et al. (2011).  
+   Scikit-learn: Machine Learning in Python.  
+   *Journal of Machine Learning Research*, 12, 2825–2830.
+
+4. Hunter, J. D. (2007).  
+   Matplotlib: A 2D graphics environment.  
+   *Computing in Science & Engineering*, 9(3), 90–95.
+
+5. Waskom, M. (2021).  
+   Seaborn: Statistical data visualization.  
+   https://seaborn.pydata.org
 
 ## Contact
 
