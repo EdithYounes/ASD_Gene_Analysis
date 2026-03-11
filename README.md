@@ -8,7 +8,7 @@
 *Summary figure combining PCA, top gene heatmap, volcano plot, and feature importance.*
 
 
-**Author:** [Edith Younes]  
+**Author:** Edith Younes  
 
 > **Project Pitch:** This project demonstrates my ability to integrate **biology, data science, and machine learning** by analyzing autism gene expression data and identifying candidate genes. It showcases skills directly relevant to computational and biomedical research, making it highly applicable for a Master’s in Biomedical Engineering.
 
@@ -39,7 +39,7 @@ By identifying candidate genes associated with autism, I aim to develop **comput
 
 ## Project Structure
 
-ASD_Gene_Analysis/
+ASD_Gene_Analysis
 - **README.md** – Project overview and instructions
 - **ASD_analysis.ipynb** – Full analysis notebook
 - **figures/** – Folder containing all figures
