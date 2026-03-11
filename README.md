@@ -1,4 +1,4 @@
-# 🧬 Autism Gene Expression Analysis Using Machine Learning
+# Autism Gene Expression Analysis Using Machine Learning
 
 ![Python](https://img.shields.io/badge/python-3.11-blue) 
 ![Jupyter](https://img.shields.io/badge/jupyter-notebook-orange) 
@@ -10,7 +10,7 @@
 
 ---
 
-## 👩‍🔬 About Me & Motivation
+## About Me & Motivation
 
 I am a **Biology graduate** with a strong interest in **computational biology and biomedical engineering**. This project reflects my passion for combining **molecular biology, machine learning, and statistical analysis** to uncover patterns in complex biological datasets.  
 
@@ -18,7 +18,7 @@ By identifying candidate genes associated with autism, I aim to develop **comput
 
 ---
 
-## 🔬 Project Overview
+## Project Overview
 
 - **Objective:** Identify ASD-associated genes and explore differential gene expression patterns between autism and control samples.  
 - **Dataset:** [GEO: GSE18123](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18123) – microarray gene expression dataset.  
@@ -33,54 +33,43 @@ By identifying candidate genes associated with autism, I aim to develop **comput
 
 ---
 
-## ⚙️ Project Structure
+## Project Structure
 .
 ├── README.md
+
 ├── notebook.ipynb # Full analysis notebook
+
 ├── figures/ # All generated figures
+
 │ ├── summary_figure_all_panels.png
+
 │ ├── pca_autism_samples.png
+
 │ ├── confusion_matrix.png
+
 │ ├── feature_importance_genes.png
+
 │ ├── top20_genes_heatmap.png
+
 │ ├── volcano_plot_autism.png
+
 │ └── pca_animation.gif # Optional PCA animation
+
 ├── requirements.txt # Python environment packages
+
 └── LICENSE # MIT License
 
 ---
 
-## 🧰 Installation & Requirements
+## Installation & Requirements
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/<EdithYounes>/<ASD_Gene_Analysis>.git
+cd <ASD_Gene_Analysis>
 
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# Mac/Linux
-source venv/bin/activate
-
-Install dependencies:
-pip install -r requirements.txt
-
-## 🚀 How to Run
-
-Open the Jupyter notebook:ASD_analysis.ipynb
-The notebook will automatically:
-
-Download the GEO dataset (GSE18123)
-
-Preprocess the data
-
-Perform PCA and Random Forest classification
-
-Generate all figures (saved in figures/)
-
-✅ All analyses are fully reproducible from start to finish.
+---
 
 ## 📊 Methods & Analysis
 
