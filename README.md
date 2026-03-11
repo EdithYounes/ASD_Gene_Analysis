@@ -1,64 +1,62 @@
-Autism Gene Expression Analysis Using Machine Learning
+# 🧬 Autism Gene Expression Analysis Using Machine Learning
 
+![Python](https://img.shields.io/badge/python-3.11-blue) 
+![Jupyter](https://img.shields.io/badge/jupyter-notebook-orange) 
+![License](https://img.shields.io/badge/license-MIT-green)
 
+![Summary Figure](figures/summary_figure_all_panels.png)
 
+> **Project Pitch:** This project demonstrates my ability to integrate **biology, data science, and machine learning** by analyzing autism gene expression data and identifying candidate genes. It showcases skills directly relevant to computational and biomedical research, making it highly applicable for a Master’s in Biomedical Engineering.
 
+---
 
+## 👩‍🔬 About Me & Motivation
 
-Project Pitch: This project demonstrates my ability to integrate biology, data science, and machine learning by analyzing autism gene expression data and identifying candidate genes. It showcases skills directly relevant to computational and biomedical research, making it highly applicable for a Master’s in Biomedical Engineering.
+I am a **Biology graduate** with a strong interest in **computational biology and biomedical engineering**. This project reflects my passion for combining **molecular biology, machine learning, and statistical analysis** to uncover patterns in complex biological datasets.  
 
-About Me & Motivation
+By identifying candidate genes associated with autism, I aim to develop **computational and analytical skills that support translational biomedical research** and future innovations in healthcare.
 
-I am a Biology graduate with a strong interest in computational biology and biomedical engineering. This project reflects my passion for combining molecular biology, machine learning, and statistical analysis to uncover patterns in complex biological datasets.
+---
 
-By identifying candidate genes associated with autism, I aim to develop computational and analytical skills that support translational biomedical research and future innovations in healthcare.
+## 🔬 Project Overview
 
-Project Overview
+- **Objective:** Identify ASD-associated genes and explore differential gene expression patterns between autism and control samples.  
+- **Dataset:** [GEO: GSE18123](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18123) – microarray gene expression dataset.  
+- **Approach:**  
+  - Data preprocessing and cleaning  
+  - Selection of top 5,000 most variable genes  
+  - Standardization and dimensionality reduction (PCA)  
+  - Classification using Random Forest  
+  - Feature importance analysis  
+  - Statistical significance analysis (t-test, volcano plot)  
+  - Visualization with heatmaps, PCA plots, and summary figures  
 
-Objective: Identify ASD-associated genes and explore differential gene expression patterns between autism and control samples.
+---
 
-Dataset: GEO: GSE18123
- – microarray gene expression dataset.
-
-Approach:
-
-Data preprocessing and cleaning
-
-Selection of top 5,000 most variable genes
-
-Standardization and dimensionality reduction (PCA)
-
-Classification using Random Forest
-
-Feature importance analysis
-
-Statistical significance analysis (t-test, volcano plot)
-
-Visualization with heatmaps, PCA plots, and summary figures
-
-Project Structure
+## ⚙️ Project Structure
 .
 ├── README.md
-├── notebook.ipynb                # Full analysis notebook
-├── figures/                      # All generated figures
-│   ├── summary_figure_all_panels.png
-│   ├── pca_autism_samples.png
-│   ├── confusion_matrix.png
-│   ├── feature_importance_genes.png
-│   ├── top20_genes_heatmap.png
-│   ├── volcano_plot_autism.png
-│   └── pca_animation.gif         # Optional PCA animation
-├── requirements.txt              # Python environment packages
-└── LICENSE                       # MIT License
+├── notebook.ipynb # Full analysis notebook
+├── figures/ # All generated figures
+│ ├── summary_figure_all_panels.png
+│ ├── pca_autism_samples.png
+│ ├── confusion_matrix.png
+│ ├── feature_importance_genes.png
+│ ├── top20_genes_heatmap.png
+│ ├── volcano_plot_autism.png
+│ └── pca_animation.gif # Optional PCA animation
+├── requirements.txt # Python environment packages
+└── LICENSE # MIT License
 
-Installation & Requirements
+---
+
+## 🧰 Installation & Requirements
 
 Clone the repository:
 
+```bash
 git clone https://github.com/<your-username>/<repo-name>.git
 cd <repo-name>
-
-(Optional) Create and activate a virtual environment:
 
 python -m venv venv
 # Windows
@@ -67,15 +65,11 @@ venv\Scripts\activate
 source venv/bin/activate
 
 Install dependencies:
-
 pip install -r requirements.txt
 
-How to Run
+## 🚀 How to Run
 
-Open the Jupyter notebook:
-
-jupyter notebook notebook.ipynb
-
+Open the Jupyter notebook:ASD_analysis.ipynb
 The notebook will automatically:
 
 Download the GEO dataset (GSE18123)
@@ -86,64 +80,57 @@ Perform PCA and Random Forest classification
 
 Generate all figures (saved in figures/)
 
-All analyses are fully reproducible from start to finish.
+✅ All analyses are fully reproducible from start to finish.
 
-Methods & Analysis
+## 📊 Methods & Analysis
 
-Data Loading: GEOparse to download and process GSE18123
+- **Data Loading:** GEOparse to download and process GSE18123  
+- **Label Assignment:** Classified samples as Autism (1) or Control (0)  
+- **Gene Filtering:** Selected top 5,000 most variable genes  
+- **Dimensionality Reduction:** PCA to visualize sample clustering  
+- **Random Forest Classification:**  
+  - 80%-20% train-test split  
+  - Accuracy evaluation and confusion matrix  
+  - Feature importance ranking of genes  
+- **Statistical Analysis:** t-tests and volcano plots for significant genes  
+- **Candidate Gene Detection:** Intersection of top ML genes with statistically significant genes  
 
-Label Assignment: Classified samples as Autism (1) or Control (0)
+---
 
-Gene Filtering: Selected top 5,000 most variable genes
+## 📈 Key Results
 
-Dimensionality Reduction: PCA to visualize sample clustering
+- PCA shows **clear separation** between ASD and control samples  
+- Random Forest achieved **strong classification performance** (accuracy details in notebook)  
+- Top genes identified using both ML and statistical significance  
+- Visualizations include heatmaps, volcano plots, and a **comprehensive summary figure**
 
-Random Forest Classification:
+---
 
-80%-20% train-test split
+## ⭐ Future Work
 
-Accuracy evaluation and confusion matrix
+- Extend analysis to **RNA-seq datasets** for higher resolution  
+- Integrate **pathway and network analysis** for biological interpretation  
+- Apply **deep learning models** for improved classification and feature extraction  
 
-Feature importance ranking of genes
+---
 
-Statistical Analysis: t-tests and volcano plots for significant genes
+## 🔁 Reproducibility
 
-Candidate Gene Detection: Intersection of top ML genes with statistically significant genes
+- All code, data processing steps, and figures are **fully reproducible** using `notebook.ipynb` and `requirements.txt`  
+- Designed to demonstrate computational biology, programming, and ML skills relevant for **biomedical engineering research**
 
-Key Results
+---
 
-PCA shows clear separation between ASD and control samples
+## 📝 License
 
-Random Forest achieved strong classification performance (accuracy details in notebook)
+This project is licensed under the **MIT License**. See `LICENSE` for details.
 
-Top genes identified using both ML and statistical significance
+---
 
-Visualizations include heatmaps, volcano plots, and a comprehensive summary figure
+## 🎨 Visual Highlights
 
-Future Work
+| PCA Plot | Heatmap | Volcano Plot | Feature Importance |
+|-----------|--------|--------------|-----------------|
+| ![PCA](figures/pca_autism_samples.png) | ![Heatmap](figures/top20_genes_heatmap.png) | ![Volcano](figures/volcano_plot_autism.png) | ![Importance](figures/feature_importance_genes.png) |
 
-Extend analysis to RNA-seq datasets for higher resolution
-
-Integrate pathway and network analysis for biological interpretation
-
-Apply deep learning models for improved classification and feature extraction
-
-Reproducibility
-
-All code, data processing steps, and figures are fully reproducible using notebook.ipynb and requirements.txt
-
-Designed to demonstrate computational biology, programming, and ML skills relevant for biomedical engineering research
-
-License
-
-This project is licensed under the MIT License. See LICENSE for details.
-
-Visual Highlights
-PCA Plot	Heatmap	Volcano Plot	Feature Importance
-
-	
-	
-	
-
-Summary figure combining all panels is displayed at the top.
-└── LICENSE                       # MIT License
+> **Summary figure** combining all panels is displayed at the top.
