@@ -138,27 +138,32 @@ This project is licensed under the **MIT License**. See `LICENSE` for details.
 
 ### Interpretation
 
-The PCA visualization shows partial separation between ASD and control samples along the principal components.  
+**The PCA visualization** shows partial separation between ASD and control samples along the principal components.  
 This suggests that **gene expression patterns differ between the two groups**, indicating that gene expression may contain predictive information for ASD classification.
 
-The heatmap displays the expression patterns of the **top 20 genes identified by the Random Forest model** across all samples.
+
+**The heatmap** displays the expression patterns of the **top 20 genes identified by the Random Forest model** across all samples.
 Genes were standardized using Z-scores to highlight relative expression differences between samples. Distinct expression patterns can be observed between ASD and control groups, indicating that these genes may contribute to the molecular differences associated with autism.
 Clustering patterns suggest that some samples with similar gene expression profiles group together, further supporting the presence of **distinct transcriptional signatures in ASD**.
 These genes represent promising candidates for further biological investigation.
 
-The volcano plot highlights genes with both **large fold change and strong statistical significance**.  
+
+**The volcano plot** highlights genes with both **large fold change and strong statistical significance**.  
 These genes represent potential candidates for further biological investigation in ASD research.
 
-The feature importance analysis from the Random Forest model identifies genes that contribute most strongly to distinguishing ASD samples from controls.
+
+**The feature importance** analysis from the Random Forest model identifies genes that contribute most strongly to distinguishing ASD samples from controls.
 Genes with higher importance scores have a greater influence on the model’s predictions, suggesting that their expression levels contain meaningful information related to ASD classification.
 These genes may represent **potential biomarkers or molecular contributors to autism-related biological pathways**. However, machine learning importance scores should be interpreted cautiously and ideally validated through additional biological experiments or independent datasets.
 
-The confusion matrix summarizes the classification performance of the Random Forest model on the test dataset.
+
+**The confusion matrix** summarizes the classification performance of the Random Forest model on the test dataset.
 Correct predictions are represented along the diagonal, while off-diagonal values correspond to misclassifications.
 The model correctly classifies the majority of samples, indicating that gene expression patterns provide useful information for distinguishing ASD from control individuals.
 Although some misclassifications occur, the overall performance demonstrates that **machine learning models can capture meaningful biological signals within high-dimensional gene expression data**.
 
-The Random Forest classifier achieved strong performance in distinguishing ASD from control samples.  
+
+**The Random Forest classifier** achieved strong performance in distinguishing ASD from control samples.  
 This suggests that **patterns within gene expression data can be leveraged by machine learning models to detect disease-associated signatures.**
 
 ---
