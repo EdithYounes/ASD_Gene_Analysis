@@ -5,6 +5,8 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ![Summary Figure](figures/summary_figure_all_panels.png)
+*Summary figure combining PCA, top gene heatmap, volcano plot, and feature importance.*
+
 
 **Author:** [Edith Younes]  
 
