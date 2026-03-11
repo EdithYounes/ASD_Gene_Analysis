@@ -61,17 +61,7 @@ By identifying candidate genes associated with autism, I aim to develop **comput
 
 ---
 
-## Installation & Requirements
-
-Clone the repository:
-
-```bash
-git clone https://github.com/EdithYounes/ASD_Gene_Analysis.git
-cd ASD_Gene_Analysis
-
----
-
- ## Methods & Analysis
+## Methods & Analysis
 
 - **Data Loading:** GEOparse to download and process GSE18123  
 - **Label Assignment:** Classified samples as Autism (1) or Control (0)  
@@ -110,16 +100,25 @@ cd ASD_Gene_Analysis
 
 ---
 
-## 📝 License
+## License
 
 This project is licensed under the **MIT License**. See `LICENSE` for details.
 
 ---
 
-## 🎨 Visual Highlights
+## Visual Highlights
 
 | PCA Plot | Heatmap | Volcano Plot | Feature Importance |
 |-----------|--------|--------------|-----------------|
 | ![PCA](figures/pca_autism_samples.png) | ![Heatmap](figures/top20_genes_heatmap.png) | ![Volcano](figures/volcano_plot_autism.png) | ![Importance](figures/feature_importance_genes.png) |
 
 > **Summary figure** combining all panels is displayed at the top.
+---
+
+## Installation & Requirements
+
+Clone the repository:
+
+```bash
+git clone https://github.com/EdithYounes/ASD_Gene_Analysis.git
+cd ASD_Gene_Analysis
