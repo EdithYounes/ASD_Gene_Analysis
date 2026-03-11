@@ -36,27 +36,16 @@ By identifying candidate genes associated with autism, I aim to develop **comput
 ## Project Structure
 .
 ├── README.md
-
-├── notebook.ipynb # Full analysis notebook
-
+├── ASD_analysis.ipynb # Full analysis notebook
 ├── figures/ # All generated figures
-
 │ ├── summary_figure_all_panels.png
-
 │ ├── pca_autism_samples.png
-
 │ ├── confusion_matrix.png
-
 │ ├── feature_importance_genes.png
-
 │ ├── top20_genes_heatmap.png
-
 │ ├── volcano_plot_autism.png
-
 │ └── pca_animation.gif # Optional PCA animation
-
 ├── requirements.txt # Python environment packages
-
 └── LICENSE # MIT License
 
 ---
@@ -95,7 +84,7 @@ By identifying candidate genes associated with autism, I aim to develop **comput
 
 ## Reproducibility
 
-- All code, data processing steps, and figures are **fully reproducible** using `notebook.ipynb` and `requirements.txt`  
+- All code, data processing steps, and figures are **fully reproducible** using `ASD_analysis.ipynb` and `requirements.txt`  
 - Designed to demonstrate computational biology, programming, and ML skills relevant for **biomedical engineering research**
 
 ---
@@ -108,9 +97,9 @@ This project is licensed under the **MIT License**. See `LICENSE` for details.
 
 ## Visual Highlights
 
-| PCA Plot | Heatmap | Volcano Plot | Feature Importance |
-|-----------|--------|--------------|-----------------|
-| ![PCA](figures/pca_autism_samples.png) | ![Heatmap](figures/top20_genes_heatmap.png) | ![Volcano](figures/volcano_plot_autism.png) | ![Importance](figures/feature_importance_genes.png) |
+| PCA Plot | Heatmap | Volcano Plot | Feature Importance | Confusion Matrix | 
+|-----------|--------|--------------|-----------------|--------------|
+| ![PCA](figures/pca_autism_samples.png) | ![Heatmap](figures/top20_genes_heatmap.png) | ![Volcano](figures/volcano_plot_autism.png) | ![Importance](figures/feature_importance_genes.png) | ![Confusion](figures/confusion_matrix.png) | 
 
 > **Summary figure** combining all panels is displayed at the top.
 ---
