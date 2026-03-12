@@ -115,19 +115,6 @@ While further experimental validation would be required, these results demonstra
 
 ---
 
-## Reproducibility
-
-- All code, data processing steps, and figures are **fully reproducible** using `ASD_analysis.ipynb` and `requirements.txt`  
-- Designed to demonstrate computational biology, programming, and ML skills relevant for **biomedical engineering research**
-
----
-
-## License
-
-This project is licensed under the **MIT License**. See `LICENSE` for details.
-
----
-
 ## Visual Highlights
 
 | PCA Plot | Heatmap | Volcano Plot | Feature Importance | Confusion Matrix | 
@@ -165,6 +152,19 @@ Although some misclassifications occur, the overall performance demonstrates tha
 
 **The Random Forest classifier** achieved strong performance in distinguishing ASD from control samples.  
 This suggests that **patterns within gene expression data can be leveraged by machine learning models to detect disease-associated signatures.**
+
+---
+
+## Reproducibility
+
+- All code, data processing steps, and figures are **fully reproducible** using `ASD_analysis.ipynb` and `requirements.txt`  
+- Designed to demonstrate computational biology, programming, and ML skills relevant for **biomedical engineering research**
+
+---
+
+## License
+
+This project is licensed under the **MIT License**. See `LICENSE` for details.
 
 ---
 
