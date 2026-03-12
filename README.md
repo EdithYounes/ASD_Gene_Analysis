@@ -1,4 +1,4 @@
-# Autism Gene Expression Analysis Using Machine Learning
+# Autism Gene Expression Analysis with Machine Learning (Random Forest)
 
 ![Python](https://img.shields.io/badge/python-3.11-blue) 
 ![Jupyter](https://img.shields.io/badge/jupyter-notebook-orange) 
@@ -66,6 +66,20 @@ ASD_Gene_Analysis
   - `volcano_plot_autism.png`
 - **requirements.txt** – Minimal environment packages
 - **LICENSE** – MIT License
+  
+---
+
+## Technologies Used
+
+- Python
+- Jupyter Notebook
+- scikit-learn
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- GEOparse
+
 ---
 
 ## Methods & Analysis
@@ -83,11 +97,33 @@ ASD_Gene_Analysis
 
 ---
 
+## Model Performance
+
+The Random Forest classifier was trained to distinguish Autism Spectrum Disorder (ASD) samples from control samples using gene expression profiles.
+
+### Performance Metrics
+
+- **Training Accuracy:** 1.00  
+- **Test Accuracy:** 0.75  
+
+| Class | Precision | Recall | F1-score | Support |
+|------|-----------|--------|---------|--------|
+| Control (0) | 0.74 | 1.00 | 0.85 | 40 |
+| ASD (1) | 1.00 | 0.18 | 0.30 | 17 |
+
+**Overall Accuracy:** 0.75 (57 samples)  
+**Macro Average F1-score:** 0.58  
+**Weighted Average F1-score:** 0.69
+
+*Performance metrics were computed using the test dataset following an 80/20 train–test split.*
+
+---
+
 ## Key Results
 
 - PCA shows **clear separation** between ASD and control samples  
-- Random Forest achieved **strong classification performance** (accuracy details in notebook)  
-- Top genes identified using both ML and statistical significance  
+- Random Forest classifier achieved **75% test accuracy** in distinguishing ASD from control samples 
+- Top genes identified using both ML and statistical significance
 - Visualizations include heatmaps, volcano plots, and a **comprehensive summary figure**
 
 ---
@@ -112,7 +148,8 @@ While further experimental validation would be required, these results demonstra
 - Extend analysis to **RNA-seq datasets** for higher resolution  
 - Integrate **pathway and network analysis** for biological interpretation  
 - Apply **deep learning models** for improved classification and feature extraction  
-
+- Validate candidate genes using independent ASD datasets
+  
 ---
 
 ## Visual Highlights
@@ -121,7 +158,7 @@ While further experimental validation would be required, these results demonstra
 |-----------|--------|--------------|-----------------|---------------|
 | ![PCA](figures/pca_autism_samples.png) | ![Heatmap](figures/top20_genes_heatmap.png) | ![Volcano](figures/volcano_plot_autism.png) | ![Importance](figures/feature_importance_genes.png) | ![Confusion](figures/confusion_matrix.png) | 
 
-> **Summary figure** combining all panels is displayed at the top. (except confusion matrix)
+> **Summary figure** combining all panels is displayed at the top.
 
 ### Interpretation
 
@@ -152,6 +189,26 @@ Although some misclassifications occur, the overall performance demonstrates tha
 
 **The Random Forest classifier** achieved strong performance in distinguishing ASD from control samples.  
 This suggests that **patterns within gene expression data can be leveraged by machine learning models to detect disease-associated signatures.**
+
+---
+
+## Limitations of the Study
+
+While this analysis demonstrates how machine learning can identify patterns in gene expression data, several limitations should be considered.
+
+**Limited sample size**  
+Gene expression datasets often contain a relatively small number of samples compared to the large number of genes measured. This high-dimensional setting can increase the risk of overfitting in machine learning models.
+
+**Single dataset analysis**  
+This study relies on a single microarray dataset (GSE18123). Results may vary across different cohorts or experimental platforms. Validation using independent datasets would strengthen the robustness of the findings.
+
+**Microarray technology limitations**  
+Microarray platforms measure gene expression using predefined probes and have lower resolution compared to modern RNA sequencing technologies.
+
+**Biological interpretation requires further validation**  
+Although the model identifies candidate genes associated with ASD, machine learning feature importance does not establish causal relationships. Experimental validation and pathway analysis would be required to confirm biological relevance.
+
+Despite these limitations, the project demonstrates how computational approaches can help prioritize candidate genes and explore molecular patterns associated with complex disorders such as Autism Spectrum Disorder.
 
 ---
 
@@ -198,7 +255,7 @@ This project is licensed under the **MIT License**. See `LICENSE` for details.
 If you use or reference this project, please cite it as:
 
 Younes, E. (2026).  
-*Autism Gene Expression Analysis Using Machine Learning.*  
+*Autism Gene Expression Analysis with Machine Learning (Random Forest).* 
 GitHub Repository.  
 https://github.com/yourusername/ASD_Gene_Analysis
 
@@ -207,3 +264,4 @@ https://github.com/yourusername/ASD_Gene_Analysis
 ## Contact
 
 **[Edith Younes]** — [younesedith@gmail.com]
+For questions or collaborations, feel free to reach out via GitHub, or email. 
